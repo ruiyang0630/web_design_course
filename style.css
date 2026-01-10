@@ -165,3 +165,169 @@ nav ul li a.active, nav ul li a:hover {
     border-radius: 40px;
     border: 1px solid #c9b08a;
 }
+
+/* ========================Footer======================== */
+.footer {
+    padding-bottom: 80px;
+    margin-top: 100px;
+}
+
+.footer-divide-line {
+    border: 0;
+    border-top: 1px solid #c9b08a;
+    margin-bottom: 60px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 200px;
+}
+
+.footer-section {
+    flex: 1;
+    color: white;
+}
+
+.footer-section .section-title {
+    color: #c9b08a;
+}
+
+.brand-name {
+    color: #c9b08a;
+    font-size: 15pt;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.brand-slogan {
+    font-size: 11pt;
+    opacity: 0.9;
+}
+
+.copyright {
+    font-size: 10pt;
+    opacity: 0.6;
+}
+
+.section-title {
+    font-size: 12pt;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.info-list {
+    list-style: none;
+}
+
+.info-list li {
+    font-size: 11pt;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+/* ========================RWD======================== */
+
+/* 寬度小於 1024px */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .navbar {
+        margin: 20px;
+        padding: 15px 25px;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 40px;
+    }
+
+    .footer-content {
+        gap: 50px;
+    }
+}
+
+/* 寬度小於 768px */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 11pt;
+        padding: 5px 15px;
+    }
+
+    .search-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .hero-img {
+        height: 300px;
+        border-radius: 40px;
+    }
+
+    /* 改單欄 */
+    .img-grid-3 {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+
+    .dish-item img, .phi-item img {
+        height: 400px;
+    }
+
+    .section-3 .title-area {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .section-3 .context {
+        width: 100%;
+        letter-spacing: 2px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+}
+
+/* 寬度小於 1920px */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1500px;
+    }
+
+    .navbar {
+        margin: 60px auto;
+        max-width: 1500px;
+        padding: 40px 80px;
+    }
+
+    .hero-img {
+        height: 700px;
+    }
+
+    .dish-item img {
+        height: 750px;
+    }
+
+    .section-3 .context {
+        font-size: 14pt;
+        line-height: 2;
+    }
+}
