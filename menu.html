@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宴 YÀN | Taiwan Fine Dining</title>
+    <link rel="icon" href="static/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+</head>
+<body>
+    <header class="navbar">
+            <div class="logo-area">
+                <div class="logo-circle">
+                    <img class="logo-circle" src="static/logo.png" alt="logo">
+                </div>
+                
+                <div class="logo-text">
+                    <h1>宴 YÀN</h1>
+                    <p>Taiwan Fine Dining</p>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="menu.html" class="active">菜單</a></li>
+                    <li><a href="#">品牌故事</a></li>
+                    <li><a href="#">訂位</a></li>
+                    <li><a href="#">體驗回饋</a></li>
+                    <li><a href="#">聯絡</a></li>
+                    <li class="search-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+    <main class="container page-menu">
+        <section class="menu-section-1">
+            <p class="subtitle">MENU</p>
+            <h2 class="main-title">菜單</h2>
+            <p class="menu-description">
+                嚴選優質食材，搭配主廚精準的烹調技法，呈現純粹而平衡的風味。<br>
+                菜單隨季節更迭，為您帶來細緻且難忘的用餐體驗。
+            </p>
+        </section>
+    
+        <nav class="menu-tabs">
+            <ul>
+                <li><a href="#" class="tab-item active" data-target="tasting-menu">套餐 TASTING MENU</a></li>
+                <li><a href="#" class="tab-item" data-target="la-carte">單點 A LA CARTE</a></li>
+                <li><a href="#" class="tab-item" data-target="beverage-pairing">飲品 BEVERAGE PAIRING</a></li>
+                <li><a href="#" class="tab-item" data-target="seasonal">季節限定 SEASONAL</a></li>
+            </ul>
+        </nav>
+
+        <div id="tasting-menu" class="menu-content active">
+            <section class="menu-section-2">
+                <h3>套餐 TASTING MENU</h3>
+                <p>三道旬味精選，描述山海之間的味覺旅程。</p>
+            </section>
+        
+            <section class="menu-section-3">
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="static/menu1.png" alt="春韻序章">
+                    </div>
+                    <div class="dish-content">
+                        <p class="dish-tag">TASTING HIGHLIGHT</p>
+                        <h4 class="dish-name">春韻序章</h4>
+                        <p class="dish-detail">盤藝石法香氣馬告與山胡椒高湯，開啟春日細膩的海口香氣。</p>
+                        <p class="dish-source">食材來源｜基隆崁仔頂魚市 · 花蓮馬告部落</p>
+                    </div>
+                </div>
+        
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="static/menu2.png" alt="山海漫步">
+                    </div>
+                    <div class="dish-content">
+                        <p class="dish-tag">TASTING HIGHLIGHT</p>
+                        <h4 class="dish-name">山海漫步</h4>
+                        <p class="dish-detail">烏骨雞、香菇與雲霧煙燻的層次，連結山林與海洋的香氣。</p>
+                        <p class="dish-source">食材來源｜苗栗信義鄉香菇農場</p>
+                    </div>
+                </div>
+        
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="static/menu3.png" alt="焙火終曲">
+                    </div>
+                    <div class="dish-content">
+                        <p class="dish-tag">TASTING HIGHLIGHT</p>
+                        <h4 class="dish-name">焙火終曲</h4>
+                        <p class="dish-detail">穀物和牛與烏魚子煙蕾勾勒的深邃香氣，以柑橘清香收尾。</p>
+                        <p class="dish-source">食材來源｜雲林口湖漁村 · 彰化肉品市場</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="la-carte" class="menu-content" style="display: none;">
+            <section class="menu-section-2">
+                <h3>單點 A LA CARTE</h3>
+                <p>精緻單點料理，展現食材純粹本味。</p>
+            </section>
+
+            <section class="menu-section-3 dish-grid-2">
+                <div class="dish-card small-card">
+                    <div class="dish-img square-img">
+                        <img src="static/menu4.png" alt="煙燻白玉干貝">
+                    </div>
+                    <div class="dish-content">
+                        <h4 class="dish-name">煙燻白玉干貝</h4>
+                        <p class="dish-detail">雲林茭白筍與干貝煙燻成就的柔順海味。</p>
+                        <p class="dish-source">食材來源｜雲林水林茭白筍田</p>
+                    </div>
+                </div>
+        
+                <div class="dish-card small-card">
+                    <div class="dish-img square-img">
+                        <img src="static/menu5.png" alt="梅香炙燒鴨">
+                    </div>
+                    <div class="dish-content">
+                        <h4 class="dish-name">梅香炙燒鴨</h4>
+                        <p class="dish-detail">宜蘭櫻桃鴨搭配陳年梅醋，收斂出優雅果酸。</p>
+                        <p class="dish-source">食材來源｜宜蘭蘭陽平原鴨場</p>
+                    </div>
+                </div>
+        
+                <div class="dish-card small-card">
+                    <div class="dish-img square-img">
+                        <img src="static/menu6.png" alt="蔥油炊粉">
+                    </div>
+                    <div class="dish-content">
+                        <h4 class="dish-name">蔥油炊粉</h4>
+                        <p class="dish-detail">澎湖米粉吸附烏金醬香，佐苗栗青蔥爽脆。</p>
+                        <p class="dish-source">食材來源｜澎湖白沙鄉龍港</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="beverage-pairing" class="menu-content" style="display: none;">
+            <section class="menu-section-2">
+                <h3>飲品 BEVERAGE PAIRING</h3>
+                <p>精選飲品搭配餐點，平衡並提升整體風味。</p>
+            </section>
+
+            <section class="menu-section-3 dish-grid-2">
+                <div class="dish-card small-card">
+                    <div class="dish-img square-img">
+                        <img src="static/menu7.png" alt="山韻高山茶氣泡">
+                    </div>
+                    <div class="dish-content">
+                        <h4 class="dish-name">山韻高山茶氣泡</h4>
+                        <p class="dish-detail">阿里山烏龍注入香柚氣泡的細密消爽。</p>
+                        <p class="dish-source">食材來源｜嘉莪阿里山茶間</p>
+                    </div>
+                </div>
+        
+                <div class="dish-card small-card">
+                    <div class="dish-img square-img">
+                        <img src="static/menu8.png" alt="黑糖薑香拿鐵">
+                    </div>
+                    <div class="dish-content">
+                        <h4 class="dish-name">梅嵐調和酒</h4>
+                        <p class="dish-detail">手釀梅酒結台羅勸與百里香的草本芳香。</p>
+                        <p class="dish-source">食材來源｜台中新社梅農合作社</p>
+                    </div>
+                </div>
+        
+                <div class="dish-card small-card">
+                    <div class="dish-img square-img">
+                        <img src="static/menu9.png" alt="梅嵐調和酒">
+                    </div>
+                    <div class="dish-content">
+                        <h4 class="dish-name">黑糖薑香拿鐵</h4>
+                        <p class="dish-detail">台南黑糖與紅烏龍熬煮，融入溫暖薑辛。</p>
+                        <p class="dish-source">食材來源｜台束鹿野紅烏龍茶區</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="seasonal" class="menu-content" style="display: none;">
+            <section class="menu-section-2">
+                <h3>季節限定 SEASONAL </h3>
+                <p>以當季食材入飲，呈現專屬時令風味。</p>
+            </section>
+
+            <section class="menu-section-3 dish-grid-2">
+                <div class="dish-card small-card">
+                    <div class="dish-img square-img">
+                        <img src="static/menu10.png" alt="秋分甘露">
+                    </div>
+                    <div class="dish-content">
+                        <h4 class="dish-name">秋分甘露</h4>
+                        <p class="dish-detail">牛蒡與金針花調和的溫潤甘甜。</p>
+                        <p class="dish-source">食材來源｜基隆崁仔頂谯市</p>
+                    </div>
+                </div>
+        
+                <div class="dish-card small-card">
+                    <div class="dish-img square-img">
+                        <img src="static/menu11.png" alt="冬藏米糕">
+                    </div>
+                    <div class="dish-content">
+                        <h4 class="dish-name">冬藏米糕</h4>
+                        <p class="dish-detail">池上米與鳥魚子堆疊的暖心鹹香。</p>
+                        <p class="dish-source">食材來源｜台東池上稻田</p>
+                    </div>
+                </div>
+        
+                <div class="dish-card small-card">
+                    <div class="dish-img square-img">
+                        <img src="static/menu12.png" alt="晨霧甘藷塔">
+                    </div>
+                    <div class="dish-content">
+                        <h4 class="dish-name">晨霧甘藷塔</h4>
+                        <p class="dish-detail">台農57號甘蓄與生乳塑造的輕盈甜韻。</p>
+                        <p class="dish-source">食材來源｜林古坑地瓜間</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <hr class="footer-divide-line">
+            
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="brand-name">宴 YÀN</h3>
+                    <p class="brand-slogan">台灣味的現代演繹 · 靜謐中品味土地</p>
+                    <p class="copyright">©2025 宴 Yan. All Rights Reserved.</p>
+                </div>
+    
+                <div class="footer-section">
+                    <h4 class="section-title">資訊</h4>
+                    <ul class="info-list">
+                        <li>地址 ｜ 臺中市西區公益路二段180號</li>
+                        <li>營業 ｜ 週二至週日 18:00 - 23:00</li>
+                        <li>電話 ｜ +886 4 2388 1177</li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section">
+                    <h4 class="section-title">社群</h4>
+                    <ul class="info-list">
+                        <li>Instagrram : @yan.finedining</li>
+                        <li>Line官方帳號 : @yan-table</li>
+                        <li>Email : reservation@yan-tw.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=0.1"></script>
+</body>
+</html>
