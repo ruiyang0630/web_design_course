@@ -241,10 +241,10 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .description {
-    margin-top: 20px;
+    margin-top: 5px;
     font-size: 11pt;
     color: white;
-    opacity: 0.4;
+    opacity: 0.6;
     letter-spacing: 2px;
 }
 
@@ -506,14 +506,6 @@ nav ul li a.active, nav ul li a:hover {
     margin-bottom: 60px;
 }
 
-.order-description {
-    font-size: 11pt;
-    color: white;
-    opacity: 0.6;
-    letter-spacing: 2px;
-    margin-top: 5px;
-}
-
 .reservation-container {
     background-color: rgba(80, 102, 88, 0.4);
     border: 1px solid rgba(205, 179, 142, 0.3);
@@ -648,6 +640,77 @@ nav ul li a.active, nav ul li a:hover {
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* ========================Feedback.html======================== */
+.page-feedback {
+    padding-top: 40px;
+}
+
+/* section-1 */
+.feedback-section-1 {
+    margin-bottom: 60px;
+}
+
+.feedback-intro {
+    margin-top: 30px;
+    font-size: 11pt;
+    color: #CDB38E;
+    opacity: 0.8;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+/* section-2 */
+.feedback-section-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.feedback-card {
+    background-color: rgba(80, 102, 88, 0.4);
+    border: 1px solid rgba(205, 179, 142, 0.3);
+    border-radius: 30px;
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.feedback-content {
+    flex: 1;
+}
+
+.comment {
+    font-size: 13pt;
+    color: white;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.user-name {
+    color: #CDB38E;
+    font-size: 11pt;
+    margin-bottom: 5px;
+}
+
+.user-title {
+    color: white;
+    font-size: 9pt;
+    opacity: 0.6;
+}
+
+.rating {
+    display: flex;
+    gap: 5px;
+    color: #CDB38E;
+    font-size: 14pt;
+}
 
 
 /* ========================RWD======================== */
@@ -836,6 +899,27 @@ nav ul li a.active, nav ul li a:hover {
 
     .btn {
         padding: 12px 25px;
+    }
+
+    /* ========feedback.html======== */
+    .feedback-section-2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .feedback-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+        border-radius: 40px;
+    }
+    
+    .user-avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .rating {
+        justify-content: center;
     }
 }
 
