@@ -240,7 +240,7 @@ nav ul li a.active, nav ul li a:hover {
     margin-bottom: 40px;
 }
 
-.menu-description {
+.description {
     margin-top: 20px;
     font-size: 11pt;
     color: white;
@@ -407,6 +407,95 @@ nav ul li a.active, nav ul li a:hover {
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* ========================Story.html======================== */
+/* story-section-1 */
+.page-story {
+    padding-top: 40px;
+}
+
+.story-section-1 {
+    margin-bottom: 80px;
+}
+
+.story-intro {
+    margin-top: 30px;
+    font-size: 11pt;
+    color: #CDB38E;
+    opacity: 0.8;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+/* story-section-2 */
+.story-section-2 {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-item {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    background-color: rgba(80, 102, 88, 0.4);
+    border: 1px solid rgba(205, 179, 142, 0.3);
+    border-radius: 30px;
+    padding: 40px 10px;
+}
+
+.content-box .year {
+    font-size: 30pt;
+    color: white;
+    font-weight: 300;
+    min-width: 135px;
+    text-align: center;
+}
+
+.text-area {
+    flex: 1;
+}
+
+.text-area h4 {
+    color: #CDB38E;
+    font-size: 13pt;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+}
+
+.text-area p {
+    color: white;
+    font-size: 11pt;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.timeline-images {
+    flex: 0 0 35%;
+    position: sticky;
+    top: 50px;
+}
+
+.sticky-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.story-img {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    border: 1px solid rgba(205, 179, 142, 0.2);
+}
+
 
 
 
@@ -555,9 +644,37 @@ nav ul li a.active, nav ul li a:hover {
     .square-img img {
         border-radius: 30px;
     }
+
+    /* ========story.html======== */
+    .story-section-2 {
+        flex-direction: column;
+    }
+    
+    .timeline-images {
+        width: 100%;
+        position: static;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .content-box {
+        flex-direction: column;
+        padding: 40px;
+        gap: 20px;
+        border-radius: 40px;
+        text-align: center;
+    }
+    
+    .content-box .year {
+        font-size: 30pt;
+        min-width: auto;
+    }
 }
 
-/* 寬度小於 1920px */
+/* 寬度大於 1920px */
 @media (min-width: 1920px) {
     .container {
         max-width: 1500px;
