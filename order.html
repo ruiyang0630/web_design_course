@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宴 YÀN | Taiwan Fine Dining</title>
+    <link rel="icon" href="static/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+</head>
+<body>
+    <header class="navbar">
+            <div class="logo-area">
+                <div class="logo-circle">
+                    <img class="logo-circle" src="static/logo.png" alt="logo">
+                </div>
+                
+                <div class="logo-text">
+                    <h1>宴 YÀN</h1>
+                    <p>Taiwan Fine Dining</p>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="menu.html">菜單</a></li>
+                    <li><a href="story.html">品牌故事</a></li>
+                    <li><a href="order.html" class="active">訂位</a></li>
+                    <li><a href="feedback.html">體驗回饋</a></li>
+                    <li><a href="contact.html">聯絡</a></li>
+                    <li class="search-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+    <main class="container page-order">
+        <section class="order-section-1">
+            <p class="subtitle">ONLINE RESERVATION</p>
+            <h2 class="main-title">預約席位</h2>
+            <p class="order-description">歡迎提前預約，為您保留專屬席位。</p>
+        </section>
+    
+        <div class="reservation-container">
+            <form id="reservationForm">
+                
+                <div class="form-step active" id="step1">
+                    <div class="step-info">
+                        <span>步驟 1/3</span>
+                        <span>日期與人數</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 33%;"></div>
+                    </div>
+    
+                    <div class="input-grid">
+                        <div class="input-group">
+                            <label>日期</label>
+                            <input type="date" placeholder="請選擇日期">
+                        </div>
+
+                        <div class="input-group">
+                            <label>時段</label>
+                            <select>
+                                <option value="">請選擇時段</option>
+                                <option value="18:00">18:00</option>
+                                <option value="19:30">19:30</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label>人數</label>
+                            <input type="number" min="1" placeholder="請輸入人數">
+                        </div>
+                    </div>
+    
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-prev" disabled>上一步</button>
+                        <button type="button" class="btn btn-next">下一步</button>
+                    </div>
+                </div>
+    
+                <div class="form-step" id="step2" style="display: none;">
+                    <div class="step-info">
+                        <span>步驟 2/3</span>
+                        <span>聯絡資訊</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 66%;"></div>
+                    </div>
+    
+                    <div class="input-grid">
+                        <div class="input-group">
+                            <label>姓名</label>
+                            <input type="text" placeholder="請輸入姓名">
+                        </div>
+                        <div class="input-group">
+                            <label>聯絡電話</label>
+                            <input type="tel" placeholder="請輸入電話">
+                        </div>
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="請輸入電子信箱">
+                        </div>
+                    </div>
+    
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-prev">上一步</button>
+                        <button type="button" class="btn btn-next">下一步</button>
+                    </div>
+                </div>
+    
+                <div class="form-step" id="step3" style="display: none;">
+                    <div class="step-info">
+                        <span>步驟 3/3</span>
+                        <span>餐飲偏好</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+    
+                    <div class="input-grid grid-2">
+                        <div class="input-group">
+                            <label>餐飲偏好</label>
+                            <textarea placeholder="例如：過敏食材、忌口項目"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <label>其他備註</label>
+                            <textarea placeholder="例如：慶生、紀念日需求"></textarea>
+                        </div>
+                    </div>
+    
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-prev">上一步</button>
+                        <button type="submit" class="btn btn-submit">送出預約</button>
+                    </div>
+                </div>
+    
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <hr class="footer-divide-line">
+            
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="brand-name">宴 YÀN</h3>
+                    <p class="brand-slogan">台灣味的現代演繹 · 靜謐中品味土地</p>
+                    <p class="copyright">©2025 宴 Yan. All Rights Reserved.</p>
+                </div>
+    
+                <div class="footer-section">
+                    <h4 class="section-title">資訊</h4>
+                    <ul class="info-list">
+                        <li>地址 ｜ 臺中市西區公益路二段180號</li>
+                        <li>營業 ｜ 週二至週日 18:00 - 23:00</li>
+                        <li>電話 ｜ +886 4 2388 1177</li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section">
+                    <h4 class="section-title">社群</h4>
+                    <ul class="info-list">
+                        <li>Instagrram : @yan.finedining</li>
+                        <li>Line官方帳號 : @yan-table</li>
+                        <li>Email : reservation@yan-tw.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js?v=0.2"></script>
+</body>
+</html>

@@ -496,6 +496,157 @@ nav ul li a.active, nav ul li a:hover {
     border: 1px solid rgba(205, 179, 142, 0.2);
 }
 
+/* ========================Order.html======================== */
+.page-order {
+    padding-top: 40px;
+    min-height: 80vh;
+}
+
+.order-section-1 {
+    margin-bottom: 60px;
+}
+
+.order-description {
+    font-size: 11pt;
+    color: white;
+    opacity: 0.6;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.reservation-container {
+    background-color: rgba(80, 102, 88, 0.4);
+    border: 1px solid rgba(205, 179, 142, 0.3);
+    border-radius: 30px;
+    padding: 40px 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.step-info {
+    display: flex;
+    justify-content: space-between;
+    color: #CDB38E;
+    font-size: 10pt;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 40px;
+}
+
+.progress {
+    height: 100%;
+    background: #CDB38E;
+    transition: width 0.3s ease;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.input-grid.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group label {
+    font-size: 10pt;
+    color: #CDB38E;
+    letter-spacing: 2px;
+}
+
+.input-group input, 
+.input-group select, 
+.input-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(205, 179, 142, 0.3);
+    border-radius: 20px;
+    padding: 15px 20px;
+    color: white;
+    font-family: 'Noto Serif TC', serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group select option {
+    background-color: #132218;
+    color: #CDB38E;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: #CDB38E;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.input-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 12px 40px;
+    border-radius: 50px;
+    font-size: 11pt;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Noto Serif TC', serif;
+    white-space: nowrap;
+}
+
+.btn-prev {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+}
+
+.btn-next, .btn-submit {
+    background: transparent;
+    color: #CDB38E;
+    border: 1px solid #CDB38E;
+}
+
+.btn:hover:not(:disabled) {
+    background: #CDB38E;
+    color: #132218;
+}
+
+.btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.form-step {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
 
 
@@ -671,6 +822,20 @@ nav ul li a.active, nav ul li a:hover {
     .content-box .year {
         font-size: 30pt;
         min-width: auto;
+    }
+
+    /* ========order.html======== */
+    .reservation-container {
+        padding: 40px;
+        border-radius: 40px;
+    }
+    .input-grid, .input-grid.grid-2 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .btn {
+        padding: 12px 25px;
     }
 }
 

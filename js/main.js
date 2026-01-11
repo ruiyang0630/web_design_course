@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     initMenuTabs();
+    initOrderSteps();
 });
 
 function initMenuTabs() {
@@ -27,10 +28,56 @@ function initMenuTabs() {
             });
 
             targetContent.style.display = 'block';
-            
+
             setTimeout(() => {
                 targetContent.classList.add('active');
             }, 10);
         });
+    });
+}
+
+function initOrderSteps() {
+    const form = document.getElementById('reservationForm');
+
+    if (!form) return;
+
+    const steps = Array.from(form.getElementsByClassName('form-step'));
+    const nextBtns = form.querySelectorAll('.btn-next');
+    const prevBtns = form.querySelectorAll('.btn-prev');
+
+    function changeStep(btn, direction) {
+        const currentStep = btn.closest('.form-step');
+        const currentIndex = steps.indexOf(currentStep);
+        
+        currentStep.style.display = 'none';
+        currentStep.classList.remove('active');
+        
+        const targetIndex = currentIndex + direction;
+        if (steps[targetIndex]) {
+            steps[targetIndex].style.display = 'block';
+            
+            setTimeout(() => {
+                steps[targetIndex].classList.add('active');
+            }, 10);
+        }
+        
+        // 自動滾動到form的頂部
+        window.scrollTo({
+            top: form.offsetTop - 100,
+            behavior: 'smooth'
+        });
+    }
+
+    nextBtns.forEach(btn => {
+        btn.addEventListener('click', () => changeStep(btn, 1));
+    });
+
+    prevBtns.forEach(btn => {
+        btn.addEventListener('click', () => changeStep(btn, -1));
+    });
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('感謝您的預約！我們將儘速與您聯繫。');
     });
 }
