@@ -23,12 +23,12 @@
             
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">首頁</a></li>
+                    <li><a href="index.html">首頁</a></li>
                     <li><a href="menu.html">菜單</a></li>
                     <li><a href="story.html">品牌故事</a></li>
                     <li><a href="order.html">訂位</a></li>
                     <li><a href="feedback.html">體驗回饋</a></li>
-                    <li><a href="contact.html">聯絡</a></li>
+                    <li><a href="contact.html" class="active">聯絡</a></li>
                     <li class="search-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
@@ -38,37 +38,62 @@
             </nav>
     </header>
 
-    <main class="container">
-        <section class="section-1">
-            <img src="static/restaurant_Img.png" alt="Restaurant Img" class="hero-img">
-        </section>
-
-        <section class="section-2">
-            <p class="subtitle">SIGNATURE NOUVELLE TAIWAN CUISINE</p>
-            <h2 class="main-title">招牌三饌</h2>
-            <hr class="divide-line">
-            
-            <div class="img-grid-3">
-                <div class="dish-item"><img src="static/dish1.png" alt="Dish 1"></div>
-                <div class="dish-item"><img src="static/dish2.png" alt="Dish 2"></div>
-                <div class="dish-item"><img src="static/dish3.png" alt="Dish 3"></div>
+    <main class="container page-contact">
+        <section class="contact-section-1">
+            <p class="subtitle">CONTACT INFORMATION & LOCATION</p>
+            <h2 class="main-title">聯絡與位置</h2>
+            <div class="description">
+                <p>歡迎與我們聯繫或親臨餐廳，我們位於市中心精華地段，交通便利。</p>
+                <p>無論訂位、詢問或任何需求，我們都將以細緻貼心的服務，為您帶來愉快而舒適的用餐體驗。</p>
             </div>
         </section>
-
-        <section class="section-3">
-            <div class="title-area">
-                <div>
-                    <p class="subtitle">PHILOSOPHY</p>
-                    <h2 class="main-title">從土地到餐桌</h2>
+    
+        <section class="contact-section-2">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d910.1465498483423!2d120.64660416739041!3d24.151166135712366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d95c7623b25%3A0xe0bdad082a39c4a0!2zNDA46Ie65Lit5biC5Y2X5bGv5Y2A5YWs55uK6Lev5LqM5q61MTgw6Jmf!5e0!3m2!1szh-TW!2stw!4v1768144065339!5m2!1szh-TW!2stw" 
+                    width="100%" 
+                    height="650" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="map-iframe">
+                </iframe>
+            </div>
+    
+            <div class="info-blocks">
+                <div class="info-card">
+                    <h3>餐廳資訊</h3>
+                    <ul class="contact-details">
+                        <li>地址 ｜ 臺中市南屯區公益路二段180號</li>
+                        <li>電話 ｜ +886 4 2388 1177</li>
+                        <li>Email ｜ reservation@yan-tw.com</li>
+                        <li>營業 ｜ 週二至週日 18:00 - 23:00</li>
+                    </ul>
                 </div>
-                <p class="context">我們以台灣土地為本，建立與產地的合作，從採收、運輸到上桌的每個節奏，都維持著靜縪謐與敬意。</p>
-            </div>
-            <hr class="divide-line">
-            
-            <div class="img-grid-3">
-                <div class="phi-item"><img src="static/phi1.png" alt="Dish 1"></div>
-                <div class="phi-item"><img src="static/phi2.png" alt="Dish 2"></div>
-                <div class="phi-item"><img src="static/phi3.png" alt="Dish 3"></div>
+    
+                <div class="info-card">
+                    <h3>交通指引</h3>
+                    <ul class="transport-list">
+                        <li>捷運 ｜ 臺中捷運綠線「市政府站」步行6分鐘</li>
+                        <li>停車 ｜ 公益路地下停車場（提供代客泊車）</li>
+                        <li>計程車 ｜ 請告知「宴 YÀN 公益路」即可</li>
+                    </ul>
+                </div>
+    
+                <div class="info-card qr-card">
+                    <div class="qr-content">
+                        <div class="qr-code">
+                            <img src="static/qr-code.png" alt="Line QR Code">
+                        </div>
+                        <div class="qr-text">
+                            <h4>Line 官方帳號</h4>
+                            <p>掃描 QR Code 或搜尋：@yan-table</p>
+                            <p>立即掌握季節菜單與限定席位資訊。</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
