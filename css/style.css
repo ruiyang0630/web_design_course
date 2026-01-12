@@ -85,6 +85,17 @@ nav ul li a.active, nav ul li a:hover {
     padding: 5px 15px;
     height: 30px;
     width: 200px;
+    gap: 10px;
+}
+
+.search-box input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    width: 80px;
+    font-size: 14px;
+    padding: 0;
 }
 
 /* ========================Main-body======================== */
